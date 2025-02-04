@@ -1,23 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-<!-- saved from url=(0038)http://www.yini.org/girl/tv/index2.htm -->
-<html><script id="allow-copy_script" src="chrome-extension://kkemgiffjdndikokhpoecoloebgeibde/content_scripts/copy.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简单下载站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
-<meta name="ProgId" content="FrontPage.Editor.Document">
-<title>Rita2</title>
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-item {
+            border-bottom: 1px solid #ccc;
+            padding: 20px 0;
+        }
+
+        .download-item:last-child {
+            border-bottom: none;
+        }
+
+        .download-item h2 {
+            margin: 0 0 10px;
+        }
+
+        .download-item p {
+            margin: 0 0 20px;
+        }
+
+        .download-button {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
-<frameset framespacing="0" border="0" cols="122,*" frameborder="0">
-  <frame name="contents" target="main" src="http://mushy.icu/rita2/lan/main2.html" scrolling="no">
-  <frame name="main" src="http://mushy.icu/prism/" scrolling="auto">
-  <noframes>
-  <body>
-
-  <p>此网页使用了框架，但您的浏览器不支持框架。</p>
-
-  </body>
-  </noframes>
-</frameset>
-
+<body>
+    <header>
+        <h1>简单下载站</h1>
+    </header>
+    <main>
+        <div class="download-item">
+            <h2>文件 1 - 示例文档</h2>
+            <p>这是一个示例文档，包含一些测试内容。</p>
+            <a href="example_document.pdf" class="download-button" download>下载文件</a>
+        </div>
+        <div class="download-item">
+            <h2>文件 2 - 图片示例</h2>
+            <p>这是一张示例图片，用于测试下载功能。</p>
+            <a href="example_image.jpg" class="download-button" download>下载文件</a>
+        </div>
+    </main>
+</body>
 
 </html>
