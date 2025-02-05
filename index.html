@@ -5,77 +5,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ok下载站ok资源绿色无毒！</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .download-item {
-            border-bottom: 1px solid #ccc;
-            padding: 20px 0;
-        }
-
-        .download-item:last-child {
-            border-bottom: none;
-        }
-
-        .download-item h2 {
-            margin: 0 0 10px;
-        }
-
-        .download-item p {
-            margin: 0 0 20px;
-        }
-
-        .download-button {
-            display: inline-block;
-            background-color: #007BFF;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .download-button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
         <h1>ok下载站ok资源绿色无毒！</h1>
+        <input type="text" id="search-input" placeholder="搜索下载资源">
     </header>
-    <main>
+    <main id="main-content">
+        <!-- 原有的 2 个下载项目 -->
         <div class="download-item">
-            <h2>文件 1 - 示例文档</h2>
-            <p>这是一个示例文档，包含一些测试内容。</p>
+            <h2>微信电脑版</h2>
+            <p>适用系统：win7，8，8.1，10，11</p>
             <a href="https://zj.downxia.com/down/WxBox.rar" class="download-button" download>下载文件</a>
         </div>
         <div class="download-item">
-            <h2>文件 2 - 图片示例</h2>
-            <p>这是一张示例图片，用于测试下载功能。</p>
-            <a href="https://zj.downxia.com/down/sogoupinyinlite.rar" class="download-button" download>下载文件</a>
+            <h2>QQ电脑版</h2>
+            <p>适用系统：win7，8，8.1,10,11</p>
+            <a href="https://qn2.runjiapp.com/QQ-v9.3.5.27023Trial.zip" class="download-button" download>下载文件</a>
+        </div>
+        <!-- 新增的 20 个下载项目 -->
+        <div class="download-item">
+            <h2>搜狗拼音输入法</h2>
+            <p>适用系统：win7，8，8.1，10，11</p>
+            <a href="https://qn3.runjiapp.com/dtazq/softs/sogoupingyin_12.5.0.6558.exe" class="download-button" download>下载文件</a>
+        </div>
+        <div class="download-item">
+            <h2>极点五笔输入法</h2>
+            <p>适用系统：winxp，7，8，8.1，10，11</p>
+            <a href="https://qn1.runjiapp.com/jpwb2017_8.7.3.exe" class="download-button" download>下载文件</a>
+        </div>
+        <div class="download-item">
+            <h2>酷狗音乐7</h2>
+            <p>适用系统：win7，8，8.1，10，11</p>
+            <a href="https://downmini.yun.kugou.com/web/kugou_release_11082.exe" class="download-button" download>下载文件</a>
+        </div>
+        <div class="download-item">
+            <h2>文件 6 - 设计素材包</h2>
+            <p>包含多种设计元素的素材包。</p>
+            <a href="#" class="download-button" download>下载文件</a>
+        </div>
+        <div class="download-item">
+            <h2>文件 7 - 学习资料集</h2>
+            <p>涵盖多个学科的学习资料。</p>
+            <a href="#" class="download-button" download>下载文件</a>
+        </div>
+        <div class="download-item">
+            <h2>文件 8 - 办公模板</h2>
+            <p>多种办公场景的实用模板。</p>
+            <a href="#" class="download-button" download>下载文件</a>
+        </div>
+        <div class="download-item">
+            <h2>文件 9 - 视频剪辑素材</h2>
+            <p>丰富的视频剪辑素材资源。</p>
+            <a href="#" class="download-button" download>下载文件</a>
+        </div>
+        <div class="download-item">
+            <h2>文件 10 - 编程代码库</h2>
+            <p>各类编程语言的示例代码库。</p>
+            <a href="#" class="download-button" download>下载文件</a>
+        </div>
+        <div class="download-item">
+            <h2>文件 11 - 字体文件合集</h2>
+            <p>包含多种风格的字体文件。</p>
+            <a href="#" class="download-button" download>下载文件</a>
+        </div>
+        <div class="download-item">
+            <h2>文件 12 - 动画素材</h2>
+            <p>有趣的动画素材资源。</p>
+            <a href="#" class="download-button" download>下载文件</a>
+        </div>
+        <div class="download-item">
+            <h2>文件 13 - 数据库备份</h2>
+            <p>某个数据库的备份文件。</p>
+            <a href="#" class="download-button" download>下载文件</a>
+        </div>
+        <div class="download-item">
+            <h2>文件 14 - 测试数据集</h2>
+            <p>用于数据测试的数据集。</p>
+            <a href="#" class="download-button" download>下载文件</a>
+        </div>
+        <div class="download-item">
+            <h2>文件 15 - 地图数据</h2>
+            <p>详细的地图数据文件。</p>
+            <a href="#" class="download-button" download>下载文件</a>
+        </div>
+        <div class="download-item">
+            <h2>文件 16 - 电子书合集</h2>
+            <p>多本热门电子书集合。</p>
+            <a href="#" class="download-button" download>下载文件</a>
+        </div>
+        <div class="download-item">
+            <h2>文件 17 - 音频处理工具</h2>
+            <p>实用的音频处理软件安装包。</p>
+            <a href="#" class="download-button" download>下载文件</a>
+        </div>
+        <div class="download-item">
+            <h2>文件 18 - 图像编辑插件</h2>
+            <p>用于图像编辑软件的插件。</p>
+            <a href="#" class="download-button" download>下载文件</a>
+        </div>
+        <div class="download-item">
+            <h2>文件 19 - 网站模板</h2>
+            <p>精美的网站模板资源。</p>
+            <a href="#" class="download-button" download>下载文件</a>
+        </div>
+        <div class="download-item">
+            <h2>文件 20 - 游戏MOD</h2>
+            <p>某款游戏的MOD资源。</p>
+            <a href="#" class="download-button" download>下载文件</a>
+        </div>
+        <div class="download-item">
+            <h2>文件 21 - 医学研究报告</h2>
+            <p>一份专业的医学研究报告。</p>
+            <a href="#" class="download-button" download>下载文件</a>
+        </div>
+        <div class="download-item">
+            <h2>文件 22 - 旅游攻略文档</h2>
+            <p>详细的旅游攻略资料。</p>
+            <a href="#" class="download-button" download>下载文件</a>
         </div>
     </main>
+    <div id="pagination">
+        <!-- 分页按钮会通过 JavaScript 动态生成 -->
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
